@@ -27,14 +27,14 @@ func TestGetAPIKey(t *testing.T) {
 				"Authorization": []string{"ApiKey"},
 			},
 			expected: "",
-			errNotNil: true,
+			errNotNil: false,
 		},
 		{
 			name: "valid auth header",
 			header: http.Header{
 				"Authorization": []string{"ApiKey 123"},
 			},
-			expected: "123",
+			expected: "1223",
 			errNotNil: false,
 		},
 	}

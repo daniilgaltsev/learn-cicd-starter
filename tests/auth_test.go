@@ -5,7 +5,9 @@ import (
 	"net/http"
 
 	"github.com/daniilgaltsev/learn-cicd-starter/internal/auth"
+	
 )
+import _ "github.com/daniilgaltsev/learn-cicd-starter/internal/database"
 
 func TestGetAPIKey(t *testing.T) {
 	type testCase struct {

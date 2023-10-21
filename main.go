@@ -19,6 +19,12 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
+func unused() {
+    // this function does nothing
+    // and is called nowhere
+}
+
+
 type apiConfig struct {
 	DB *database.Queries
 }
